@@ -1,0 +1,29 @@
+intro: Starting point for mdbook
+
+after:
+  "Create docs folder": mkdir docs
+  "Build initial book": mdbook build
+
+binaries:
+- "*.png"
+
+params:
+  title:
+    prompt: "Book title:"
+    type: text
+    default: My Documentation
+
+  author:
+    prompt: "Book author:"
+    type: text
+    default: The Authors Collective
+
+  content:
+    prompt: "Include sample content?"
+    type: yesno
+    default: yes
+
+  cname:
+    prompt: "Include CNAME file for GitHub Pages?"
+    type: yesno
+    default: yes

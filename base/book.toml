@@ -1,0 +1,17 @@
+[book]
+authors = ["%{author}"]
+language = "en"
+multilingual = false
+src = "src"
+title = "%{title}"
+
+[build]
+build-dir = "docs"
+create-missing = false
+
+[output.html]
+disabled-git-repository-url = "https://github.com/user/repo"
+disabled-google-analytics = "UA-xxxxxxx-xx"
+
+[output.html.fold]
+enable = true
